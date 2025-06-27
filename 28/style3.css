@@ -1,12 +1,15 @@
 body{
     margin: 0;
-    background-color: #b7d769;
-    font-family: cursive,'Comic Sans';
+    padding: 2em;
+    background-image:linear-gradient(0deg, transparent 19px, #ccc 20px), linear-gradient(90deg, transparent 19px, #ccc 20px);
+    background-size: 20px 20px;
+    font-family: cursive,'Comic Sans'
 }
 nav{
     background-color: #17949d;
     position: fixed; top: 0px;
-    width: 100%;
+    left: 0;
+    right: 0;
     z-index: 10;
 }
 ul{
@@ -58,9 +61,62 @@ li a{
     top: 22px;
     transform: translateY(-6px) rotate(33deg);
 }
-footer{
+h2{
+    position: relative;
     text-align: center;
-    position: fixed; bottom: 0px;
-    width: 100%;
-    background-color: #e4e92a;
+    padding: 0.6em;
+    background: #e0edff;
+}
+h2:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 30px;
+    border: 15px solid transparent;
+    border-top: 15px solid #e0edff;
+    width: 0;
+    height: 0;
+}
+.box26 {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #95ccff;
+    border-radius: 8px;
+}
+.box26 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 19px;
+    background: #FFF;
+    color: #95ccff;
+    font-weight: bold;
+}
+.box26 p {
+    margin: 0; 
+    padding: 0;
+}
+img{
+    width: 100;
+    box-shadow: 2px 2px 4px #ccc;
+}
+#contentdiv{
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    background: #f4f4f4;
+    border-left: solid 6px #5bb7ae;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+    display: flex;
+    justify-content: space-around;
+}
+#contentdiv p{
+    font-size: 18px;
+    margin-top: 40px;
+}
+iframe{
+    border-radius: 12px;
 }

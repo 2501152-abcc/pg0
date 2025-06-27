@@ -1,12 +1,15 @@
 body{
     margin: 0;
-    background-color: #b7d769;
-    font-family: cursive,'Comic Sans';
+    padding: 2em;
+    background-image:linear-gradient(0deg, transparent 19px, #ccc 20px), linear-gradient(90deg, transparent 19px, #ccc 20px);
+    background-size: 20px 20px;
+    font-family: cursive,'Comic Sans'
 }
 nav{
     background-color: #17949d;
     position: fixed; top: 0px;
-    width: 100%;
+    left: 0;
+    right: 0;
     z-index: 10;
 }
 ul{
@@ -24,7 +27,7 @@ li a{
     text-decoration: none;
 }
 .hamburger{
-    position: absolute; top: 3px; right: 32px;
+    position: fixed; top: 3px; right: 32px;
     cursor: pointer;
     width: 32px;
     height: 24px;
@@ -58,9 +61,18 @@ li a{
     top: 22px;
     transform: translateY(-6px) rotate(33deg);
 }
-footer{
-    text-align: center;
-    position: fixed; bottom: 0px;
-    width: 100%;
-    background-color: #e4e92a;
+.contentdiv {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    border: double 5px #4ec4d3;
+}
+.contentdiv p {
+    margin: 0; 
+    padding: 0;
+}
+.contentdiv iframe{
+    margin-top: 10px;
+}
+h2{
+    border-bottom: solid 3px #4ec4d3;
 }
